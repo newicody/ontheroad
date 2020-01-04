@@ -1,3 +1,9 @@
 td {
 text-align:center;
 }
+td{
+visibility:hidden;
+}
+tr > td:nth-child(2)   {
+visibility:visible;
+}

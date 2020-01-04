@@ -1,12 +1,16 @@
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
 <head>
 <title>Amendes et bar&egrave;mes (source codes Rousseau)</title>
+<script src="recap.js" type="text/javascript"></script>
 <link rel="stylesheet" href="normalize.css">
 <link rel="stylesheet" href="code.css">
 </head>
+
 <body>
 
-<table summary="R&eacute;capitualif des amandes et des bar&eagrave;mes">
+<table id="table1" summary="">
+
 <tr>
 <th id="theme">Th&egrave;me</th>
 <th id="nature" >Nature de l'infraction</th>
@@ -16,6 +20,7 @@
 <th id="divers">Divers</th>
 </tr>
 
+<tr>
 <th headers="theme">Alcool</th>
 <td headers="nature">Conduite en &eacute;tat alcoolique (de 0,5 à 0,79 g/L de sang)</td>
 <td headers="amende">135€</td>
@@ -26,162 +31,333 @@
 
 <tr>
 <th headers="theme"></th>
-<td>Conduite en &eacute;tat alcoolique (>= 0,80g/L de sang ou en &eacute;tat d'ivresse ou refus de v&eacute;rifications alcool)</td>
-<td>Maxi 4500€</td>
-<td>6</td>
-<td>3ans (ou annulation 3ans)</td>
-<td>Immobolisation du v&eacute;hicule Confiscation si r&eacute;cidive</td>
+<td headers="nature">Conduite en &eacute;tat alcoolique (>= 0,80g/L de sang ou en &eacute;tat d'ivresse ou refus de v&eacute;rifications alcool)</td>
+<td headers="amende">Maxi 4500€</td>
+<td headers="retrait">6</td>
+<td headers="suspension">3ans (ou annulation 3ans)</td>
+<td headers="divers">Immobolisation du v&eacute;hicule Confiscation si r&eacute;cidive</td>
 </tr>
 
 <tr>
 <th headers="theme">Drogue</th>
-<td>Conduite apr&egrave;s usage de stup&eacute;fiants ou refus de d&eacute;pistage de stup&eacute;fiants</td>
-<td>Maxi 4500€</td>
-<td>6</td>
-<td>3 ans (ou annulation 3 ans)</td>
-<td>Confiscation si r&eacute;cidive Prison maxi 2ans</td>
+<td headers="nature">Conduite apr&egrave;s usage de stup&eacute;fiants ou refus de d&eacute;pistage de stup&eacute;fiants</td>
+<td headers="amende">Maxi 4500€</td>
+<td headers="retrait">6</td>
+<td headers="suspension">3 ans (ou annulation 3 ans)</td>
+<td headers="divers">Confiscation si r&eacute;cidive Prison maxi 2ans</td>
 </tr>
 
 <tr>
 <th headers="theme">Vitesse</th>
-<td>D&eacute;passement de 1 &agrave; 19km/h au dessus du maximum autorisé quand la vitesse est sup&eacute;rieure a 50km/h</td>
-<td>68€</td>
-<td>1</td>
-<td>Aucune</td>
-<td>-</td>
+<td headers="nature">D&eacute;passement de 1 &agrave; 19km/h au dessus du maximum autorisé quand la vitesse est sup&eacute;rieure a 50km/h</td>
+<td headers="amende">68€</td>
+<td headers="retrait">1</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">-</td>
 </tr>
 
 <tr>
-<th></th>
-<td>D&eacute;passement de 1 &agrave; 19km/h au dessus du maximum autorisé quand la vitesse est limit&eacute;e a 50km/h</td>
-<td>135</td>
-<td>1</td>
-<td>Aucune</td>
-<td>-</td>
+<th headers="theme"></th>
+<td headers="nature">D&eacute;passement de 1 &agrave; 19km/h au dessus du maximum autorisé quand la vitesse est limit&eacute;e a 50km/h</td>
+<td headers="amende">135</td>
+<td headers="retrait">1</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">-</td>
 </tr>
 
 <tr>
-<th></th>
-<td>D&eacute;passement de 20 &agrave; 29km/h au dessus du maximum autoris&eacute;</td>
-<td>135€</td>
-<td>2</td>
-<td>Aucune</td>
-<td>-</td>
+<th headers="theme"></th>
+<td headers="nature">D&eacute;passement de 20 &agrave; 29km/h au dessus du maximum autoris&eacute;</td>
+<td headers="amende">135€</td>
+<td headers="retrait">2</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">-</td>
 </tr>
 
 <tr>
-<th></th>
-<td>D&eacute;passementde 30 &acute; 39 km/h au dessus du maximum du maximum autoris&eacute;</td>
-<td>135€</td>
-<td>3</td>
-<td>3ans maxi</td>
-<td>-</td>
+<th headers="theme"></th>
+<td headers="nature">D&eacute;passementde 30 &acute; 39 km/h au dessus du maximum du maximum autoris&eacute;</td>
+<td headers="amende">135€</td>
+<td headers="retrait">3</td>
+<td headers="suspension">3ans maxi</td>
+<td headers="divers">-</td>
 </tr>
 
 <tr>
-<th></th>
-<td>D&eacute;passement de 40 &agrave; 49km/h au dessus dumaximum autoris&eacute;</td>
-<td>135€</td>
-<td>4</td>
-<td>3ans maxi</td>
-<td>D&eacute;pistage r&eacute;tention dupermis</td>
+<th headers="theme"></th>
+<td headers="nature">D&eacute;passement de 40 &agrave; 49km/h au dessus dumaximum autoris&eacute;</td>
+<td headers="amende">135€</td>
+<td headers="retrait">4</td>
+<td headers="suspension"">3ans maxi</td>
+<td headers="divers">D&eacute;pistage r&eacute;tention dupermis</td>
 </tr>
 
 <tr>
-<th></th>
-<td>D&eacute;passement de 50km/h ou plus de la limitation de vitesse</td>
-<td>Tribunal de police Maxi 1500€</td>
-<td>6</td>
-<td>3ans maxi</td>
-<td>Stage obligatoire de sensibilisation &agrave; la s&eeacute;curit&eacute; routi&egrave;re Immobilisation du v&eacute;hicule</td>
+<th headers="theme"></th>
+<td headers="nature">D&eacute;passement de 50km/h ou plus de la limitation de vitesse</td>
+<td headers="amende">Tribunal de police Maxi 1500€</td>
+<td headers="retrait">6</td>
+<td headers="suspension">3ans maxi</td>
+<td headers="divers">Stage obligatoire de sensibilisation &agrave; la s&eeacute;curit&eacute; routi&egrave;re Immobilisation du v&eacute;hicule</td>
 </tr>
 
 <tr>
-<th></th>
-<td>R&eacute;cidive d'exc&egrave;s de vitesse de 50km/h ou plus</td>
-<td>3750€</td>
-<td>6</td>
-<td>3ans maxi</td>
-<td>Confiscation obligatoire Prison max 3ans</td>
+<th headers="theme"></th>
+<td headers="nature">R&eacute;cidive d'exc&egrave;s de vitesse de 50km/h ou plus</td>
+<td headers="amende">3750€</td>
+<td headers="retrait">6</td>
+<td headers="suspension">3ans maxi</td>
+<td headers="divers">Confiscation obligatoire Prison max 3ans</td>
 </tr>
 
 <tr>
 <th headers="theme">Accident</th>
-<td>D&eacute;lit de fuite</td>
-<td>Max 75 000€</td>
-<td>6</td>
-<td>3ans maxi</td>
-<td>Prison max 3ans Confiscation obligatoire</td>
+<td headers="nature">D&eacute;lit de fuite</td>
+<td headers="amende">Max 75 000€</td>
+<td headers="retrait">6</td>
+<td headers="suspension">3ans maxi</td>
+<td headers="divers">Prison max 3ans Confiscation obligatoire</td>
 </tr>
 
 <tr>
 <th headers="theme">Installation</th>
-<td>Non port de la ceinture</td>
-<td>135€</td>
-<td>3 pour le conducteur</td>
-<td>Aucune</td>
-<td>-</td>
+<td headers="nature">Non port de la ceinture</td>
+<td headers="amende">135€</td>
+<td headers="retrait">3 pour le conducteur</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">-</td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature">Transport interdit d'un enfant de moins de 10 ans en place avant</td>
+<td headers="amende">135€</td>
+<td headers="retrait">Aucun</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">-</td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature">Transport d'un passager de moins de 18 ans non attach&eacute;</td>
+<td headers="amende">135€</td>
+<td headers="retrait">Aucun</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">-</td>
 </tr>
 
 <tr>
 <th headers="theme">T&eacute;l&eacute;phone</th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td headers="nature">Usage d'un t&eacute;l&eacute;phone tenu en main par le conducteur d'un v&eacute;hicule en circulation</td>
+<td headers="amende">135€</td>
+<td headers="retrait">3</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">-</td>
 </tr>
 
 <tr>
 <th headers="theme">Documents</th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td headers="nature">Non pr&eacute;sentation imm&eacute;diate (permis ou certificat d'immatriculation)</td>
+<td headers="amende">11€</td>
+<td headers="retrait">Aucun</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">-</td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature">Non pr&eacute;sentation des papiers dans les 5 jours</td>
+<td headers="amende">135€</td>
+<td headers="retrait">3</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">-</td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature">Conduite malgr&egrave; la r&eacute;tention ou la suspension du permis de conduire</td>
+<td headers="amende">Maxi 4500€</td>
+<td headers="retrait">6</td>
+<td headers="suspension">3 ans maxi</td>
+<td headers="divers">Prison maxi 2ans Confiscation du v&eacute;hicule</td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature">Conduite sans permis (m&ecirc;me la premi&egrave;re fois)</td>
+<td headers="amende">Maxi 15 000€</td>
+<td headers="retrait">Sans objet</td>
+<td headers="suspension">Sand objet</td>
+<td headers="divers">Prison maxi 1an Confiscation du v&eacute;hicule</td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature">Conduite sans assurance</td>
+<td headers="amende">Maxi 3750€</td>
+<td headers="retrait">Aucun</td>
+<td headers="suspension">3 ans (ou annulation 3 ans)</td>
+<td headers="divers">-</td>
 </tr>
 
 <tr>
 <th headers="theme">Gilet triangle</th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td headers="nature">D&eacute;faut de gilet ou triangle &agrave; bord du v&eacute;hicule </td>
+<td headers="amende">135€</td>
+<td headers="retrait">Aucun</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">Aucune</td>
 </tr>
+
 <tr>
-<th headers="Test d'alcol&eacute;mie"></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<th headers="theme">Test d'alcol&eacute;mie</th>
+<td headers="nature">D&eacute;faut de test d'alcool&eacute;mie &agrave; bord du v&eacute;hicule</td>
+<td headers="amende">11€</td>
+<td headers="retrait">Aucun</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers"></td>
 </tr>
+
 <tr>
-<th headers="Arret stationnement"></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<th headers="theme">Arret stationnement</th>
+<td headers="nature">Arr&ecirc;t ou stationnement au-del&agrave; du temps r&eacute;glementaire</td>
+<td headers="amende">17€</td>
+<td headers="retrait">Aucun</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">-</td>
 </tr>
+
 <tr>
-<th headers="Circulation"></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<th headers="theme"></th>
+<td headers="nature">Arr&ecirc; ou stationnement g&eacute;nant</td>
+<td headers="amende">35€</td>
+<td headers="retrait">Aucunu</td>
+<td headers="suspension">Aucune</td>
+<td headers="divers">Fourri&eagrave;re possible</td>
 </tr>
+
 <tr>
-<th headers="telephone"></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<th headers="theme">Circulation</th>
+<td headers="nature"></td>
+<td headers="amende"></td>
+<td headers="retrait"></td>
+<td headers="suspension"></td>
+<td headers="divers"></td>
 </tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature"></td>
+<td headers="amende"></td>
+<td headers="retrait"></td>
+<td headers="suspension"></td>
+<td headers="divers"></td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature"></td>
+<td headers="amende"></td>
+<td headers="retrait"></td>
+<td headers="suspension"></td>
+<td headers="divers"></td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature"></td>
+<td headers="amende"></td>
+<td headers="retrait"></td>
+<td headers="suspension"></td>
+<td headers="divers"></td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature"></td>
+<td headers="amende"></td>
+<td headers="retrait"></td>
+<td headers="suspension"></td>
+<td headers="divers"></td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature"></td>
+<td headers="amende"></td>
+<td headers="retrait"></td>
+<td headers="suspension"></td>
+<td headers="divers"></td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature">a</td>
+<td headers="amende"></td>
+<td headers="retrait"></td>
+<td headers="suspension"></td>
+<td headers="divers"></td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature"></td>
+<td headers="amende"></td>
+<td headers="retrait"></td>
+<td headers="suspension"></td>
+<td headers="divers"></td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature"></td>
+<td headers="amende"></td>
+<td headers="retrait"></td>
+<td headers="suspension"></td>
+<td headers="divers"></td>
+</tr>
+
+<tr>
+<th headers="theme"></th>
+<td headers="nature"></td>
+<td headers="amende"></td>
+<td headers="retrait"></td>
+<td headers="suspension"></td>
+<td headers="divers"></td>
+</tr>
+
 </table>
+
 <a href="https://necolas.github.io/normalize.css/">normalize</>
+
+<script>
+        var init = 1;
+        var test = document.getElementsByTagName("td");
+        for (var i = 0; i < test.length ; i++){
+            test[i].onclick = function () {
+            if (init==0){
+            cache(this);}
+            else {
+            affiche(this);
+            }
+            }
+	};
+      
+
+function affiche(j) 
+        {
+                for (c=1; c< 5; c++) {
+                test[c].setAttribute('style', 'visibility:visible');
+                init = 0;
+		};
+}
+function cache(j) 
+        {
+                for (c=1; c< 5; c++) {
+                test[c].setAttribute('style', 'visibility:hidden');
+                init = 1;
+		};
+}
+</script>
 </body>
 </html>
