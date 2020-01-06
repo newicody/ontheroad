@@ -5,7 +5,7 @@ td{
 text-align:center;
 visibility:hidden;
 border :5px ;
-background-color:green;
+background-color:#15ff00;
 border-width:5px;
 border-radius:10px;
 }
@@ -13,4 +13,9 @@ tr > td:nth-child(2)   {
 visibility:visible;
 background-color:grey;
 border : 5px yellow;
+cursor:pointer;
+}
+
+tr > td:nth-child(2):hover   {
+background-color:orange;
 }
